@@ -1,0 +1,102 @@
+
+<div id="inputdata">
+  <h2 class="text-center" id="animation">Online BIO DATA Builder</h2>
+  <form  (change)="inputdata(name.value,fname.value,mname.value,quali.value,addr.value,gender.value,dob.value,nat.value,relig.value)" id="form">
+    <table class="table" >
+      <tr>
+        <th>Enter You Name </th>
+        <th><input type="text" name="name" #name class="form-control"></th>
+      </tr>
+      <tr>
+        <th>Enter You Father's Name </th>
+        <th><input type="text" name="fname" #fname class="form-control"></th>
+      </tr>
+      <tr>
+        <th>Enter You  Mother's Name </th>
+        <th><input type="text" name="mname" #mname class="form-control"> </th>
+      </tr>
+      <tr>
+        <th>  Qualifications </th>
+        <th><input type="text" name="quali" #quali class="form-control">
+          <input type="text"  name="quali2"   class="form-control" *ngIf="quali24" >
+          <input type="text"  name="quali3"  class="form-control" *ngIf="quali34" >
+          <button *ngIf="btn2" (click)="click2()"  id="changebtn" >+Add More </button>
+          <button *ngIf="btn3" (click)="click3()"  id="changebtn">+Add More </button>
+      </th>
+      </tr>
+      <tr>
+        <th>Address </th>
+        <th><input type="text" name="addr" #addr class="form-control"></th>
+      </tr>
+      <tr>
+        <th>Gender </th>
+        <th><input type="text" name="gender" #gender class="form-control"></th>
+      </tr>
+      <tr>
+        <th>Date Of Birth </th>
+        <th><input type="text" name="dob" #dob class="form-control"></th>
+      </tr>
+      <tr>
+        <th>Nationality </th>
+        <th><input type="text" name="nat" #nat class="form-control"></th>
+      </tr>
+      <tr>
+        <th>Religion </th>
+        <th><input type="text" name="relig" #relig class="form-control"></th>
+      </tr>
+    </table>
+  </form>
+
+
+  <div>
+    <h2 class="text-center" id="animation" >BIO DATA</h2>
+    <table class="table" >
+      <tr>
+        <th>Name</th>
+        <th>:</th>
+        <th>{{name2}}</th>
+      </tr>
+      <tr>
+        <th> Father's Name</th>
+        <th>:</th>
+        <th id="outfname">{{fname2}}</th>
+      </tr>
+      <tr>
+        <th>Mother's Name</th>
+        <th>:</th>
+        <th id="outmname">{{mname2}}</th>
+      </tr>
+      <tr>
+        <th> Qualifications</th>
+        <th>:</th>
+        <th ><span id="outquali">{{quali1}}, </span><span id="outquali2">{{quali22}}, </span><span id="outquali3">{{quali32}}</span></th>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <th>:</th>
+        <th id="outaddr">{{addr2}}</th>
+      </tr>
+      <tr>
+        <th>Gender</th>
+        <th>:</th>
+        <th id="outgender">{{gender2}}</th>
+      </tr>
+      <tr>
+        <th>Date of Birth</th>
+        <th>:</th>
+        <th id="outdob">{{dob2}}</th>
+      </tr>
+       <tr>
+        <th>Nationality</th>
+        <th>:</th>
+        <th id="outnat">{{nat2}}</th>
+      </tr>
+      <tr>
+        <th>Religion</th>
+        <th>:</th>
+        <th id="outrelig">{{relig2}}</th>
+      </tr>
+
+    </table>
+  </div>
+</div>

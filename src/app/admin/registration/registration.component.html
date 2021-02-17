@@ -1,0 +1,114 @@
+
+<div class="container-fluid" id="main">
+
+<h1 class="text-center "> Register Here......!!</h1>
+<hr>
+
+
+  <form [formGroup]="regisform" (ngSubmit)="submitregis()" >
+    <table class=" table  table-borderless">
+      <tr>
+        <th>
+          <div class=" col-md-12">
+            <label for="First Name">First Name</label>
+            <input type="text"  id="fname" class="form-control text-transform:uppercase "   #input  (input)="input.value=$event.target.value.toUpperCase()"  required placeholder="First Name" formControlName="firstname">
+
+          </div>
+        </th>
+        <th>  <div class="col-md-12">
+          <label for="First Name">Middle Name</label>
+          <input type="text"  id="mname" class="form-control " required placeholder="Middle Name" formControlName="middlename">
+        </div>
+      </th>
+      <th>
+        <div class="col-md-12">
+          <label for="Last Name">Last Name</label>
+          <input type="text"  id="lname" class="form-control " required  placeholder="Last Name" formControlName="lastname">
+        </div>
+      </th>
+      </tr>
+      <tr>
+        <th>
+          <div class="col-md-12">
+            <label for="Father Name">Father's Name</label>
+            <input type="text"  id="father" class="form-control " required  placeholder="Father's Name" formControlName="fathername">
+          </div>
+        </th>
+        <th>
+
+    <div class="col-md-12">
+      <label for="Mother Name">Mother's Name</label>
+      <input type="text"  id="mother" class="form-control " required  placeholder="Mother's Name" formControlName="mothername">
+    </div>
+        </th>
+      </tr>
+      <tr>
+        <th colspan="3">
+          <div class="col-md-12">
+            <label for="Dob">Date of Birth<span style="color:red">*</span> </label>
+            <input type="date"  id="dob" class="form-control " required formControlName="dob">
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <div class="col-md-12">
+            <label for="Gender">Gender</label>
+            <br>
+            <input type="radio"  id="gender1"  name="gender"  formControlName="main">&nbsp;Male &nbsp;
+            <input type="radio"  id="gender2"  name="gender" formControlName="main">&nbsp;Female &nbsp;
+            <input type="radio"  id="gender3"  name="gender" formControlName="main">&nbsp;Transe Gender &nbsp;
+          </div>
+        </th>
+        <th colspan="2">
+          <div class="col-md-12">
+            <label for="categories">Categories</label><br>
+            <input type="checkbox"  id="obc" formControlName="categorie">&nbsp;OBC&nbsp;
+            <input type="checkbox"  id="sc"  formControlName="categorie2">&nbsp;SC&nbsp;
+            <input type="checkbox"  id="st"  formControlName="categorie3">&nbsp;ST&nbsp;
+            <input type="checkbox"  id="general"  formControlName="categorie4">&nbsp;General&nbsp;
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <div class="col-md-6">
+            <label for="email" >Email <span style="color:red">*</span> </label>
+            <input type="email"  id="email"  required class="form-control " placeholder="example@gmail.com"  formControlName="email">
+             <!-- <span id="emialisrequired" *ngIf=" regisform.get('email').touched && !regisform.get('email').valid ">Email is required</span><br> -->
+          </div>
+        </th>
+        <th>
+          <div class="col-md-12">
+            <label for="contact">Contact No. </label>
+            <input type="number"  id="contact" class="form-control " required  placeholder ="+91" formControlName="contact"  >
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th colspan="3">
+    <div class="col-md-12">
+      <label for="address">Address  </label>
+      <textarea  rows="5"  class="form-control " id="address" required  formControlName="address"></textarea>
+    </div>
+      </th>
+    </tr>
+    </table>
+
+    <center><button class="btn btn-outline-success" type="submit" >Submit</button></center>
+
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

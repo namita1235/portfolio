@@ -1,0 +1,47 @@
+
+
+
+<div id="div1" >
+  <h1 class="text-center text-danger" id="inputdata"  >CRUD Operation Using *ngFor Loop</h1>
+  <table class="table border-none"  >
+
+    <tr class="text-center text-primary">
+      <th>Name</th>
+      <th>Roll</th>
+      <th>Class</th>
+      <th>Action</th>
+
+
+  </tr>
+
+      <tr *ngFor=" let obj of arry,  index as j " class="text-center" >
+        <td>{{obj.name}}</td>
+        <td>{{obj.roll}}</td>
+        <td>{{obj.classes}}</td>
+        <td>
+          <button  class="btn btn-outline-warning" (click)="edit(j)"><span class="material-icons"> edit</span></button>&nbsp;
+          <button  class="btn btn-outline-danger" (click)="deletearray(index)"><span class="material-icons">delete  </span></button>
+        </td>
+
+
+      </tr>
+
+</table>
+<div  class="col-md-4">
+
+  <h4 class="text-primary text-center">For Update & Add New Record Operation</h4>
+  <p [style]="{'font-family':' times new roman' }">Name:</p>
+
+<input type="text"  #txt1 class="form-control" id="txt1" [value]="newname" >
+
+<p [style]="{'font-family':' times new roman'}">Roll:</p>
+
+<input type="text" [value]="newroll" #txt2 class="form-control" id="txt2" >
+
+<p [style]="{'font-family':' times new roman'}">Class:</p>
+
+<input type="text"[value]="newclasses" #txt3 class="form-control" id="txt3" ><br>
+<button  class="btn btn-outline-success" (click)="add(txt1.value,txt2.value,txt3.value)"><span class="material-icons">person_add_alt_1</span></button>&nbsp;
+<button class="btn btn-outline-success " (click)="update(txt1.value,txt2.value,txt3.value)"><span class="material-icons"> update  </span> </button>
+</div>
+</div>

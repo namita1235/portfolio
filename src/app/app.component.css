@@ -1,0 +1,36 @@
+
+#nav
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  font-weight: 600;
+  height: 100px;
+
+}
+ul li
+
+{
+  list-style: none;
+}
+#drawer
+{
+  width: 250px;
+  height: auto;
+  background-color: blue;
+  color: aliceblue;
+
+}
+#drawer a{
+  color: white;
+}
+
+ol li{
+  list-style: circle;
+}

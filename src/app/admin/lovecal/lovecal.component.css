@@ -1,0 +1,19 @@
+#header,label,.btn
+{
+  font-family: matura mt ;
+  outline: unset;
+  color: blue;
+}
+.main
+{
+  margin-left: 450px;
+  margin-top: 100px;
+}
+#txtbox
+{
+  border: none;
+  border-bottom: 2px solid rgb(130, 132, 255);
+}
+span{
+  color: red;
+}

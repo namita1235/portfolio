@@ -1,0 +1,32 @@
+#loginform
+{
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 400px;
+  margin-top: 50px;
+}
+#textleft
+{
+  text-align: left;
+}
+#name,#contact,#address,#email,#password
+{
+  border: none;
+  outline: none;
+  background-color: none;
+  border-bottom: 1px solid black;
+
+}
+
+#email.ng-invalid,#password.ng-invalid
+{
+
+  border-bottom: 3px solid red;
+}
+
+#email.ng-valid,#password.ng-valid,#email.touched
+{
+
+  border-bottom: 3px solid green;
+}
+
+

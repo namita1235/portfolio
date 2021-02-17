@@ -1,0 +1,19 @@
+
+#first_div{
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  margin-left: 350px;
+  margin-top: 50px;
+  padding-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#value1,#value2
+{
+
+  border:none;
+  background: transparent;
+  border-bottom: 1px solid blue;
+  color:white;
+}
+

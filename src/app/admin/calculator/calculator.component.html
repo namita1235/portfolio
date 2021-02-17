@@ -1,0 +1,45 @@
+
+
+
+
+<div class="container pt-5 ">
+  <div class="row">
+
+    <div class="col-md-4 " id="first_div">
+
+      <h2 class="text-center" id="header" >{{mssg}}</h2>
+      <br><br>
+
+
+        <div id="value1">{{expression_str}}</div>
+        <div> <button id="one" class="btn btn-lg btn-outline-warning my-4  col-md-4" (click)="one('1')" style="float: left;"  >1</button></div>
+        <div><button id="two" class="btn btn-lg btn-outline-warning my-4 col-md-4" (click)="one('2')" style="float: left;"    >2</button> </div>
+        <div><button id="three" class="btn btn-lg btn-outline-warning my-4 col-md-4" (click)="one('3')" style="float: left;"   >3</button></div>
+        <div><button id="four" class="btn btn-lg btn-outline-warning my-4 col-md-4" (click)="one('4')" style="float: left;"   >4</button></div>
+        <div><button id="five" class="btn btn-lg btn-outline-warning my-4 col-md-4" (click)="one('5')" style="float: left;"   >5</button></div>
+        <div><button id="six" class="btn btn-lg btn-outline-warning my-4 col-md-4"  (click)="one('6')" style="float: left;"   >6</button></div>
+        <div><button id="seven" class="btn btn-lg btn-outline-warning my-4 col-md-4" (click)="one('7')" style="float: left;"   >7</button></div>
+        <div><button id="eight" class="btn btn-lg btn-outline-warning my-4 col-md-4" (click)="one('8')" style="float: left;"   >8</button></div>
+        <div><button id="nine" class="btn btn-lg btn-outline-warning my-4 col-md-4"  (click)="one('9')" style="float: left;"   >9</button></div>
+        <div><button id="zero" class="btn btn-lg btn-outline-warning my-4 col-md-12" (click)="one('0')" style="float: left;"   >0</button></div>
+        <div> <button id="operator" (click)="passOperator('A')" class="btn btn-lg btn-outline-primary my-4 col-md-4"   style="float: left;">+</button></div>
+        <div><button id="operator2" (click)="passOperator('S')" class="btn btn-lg btn-outline-primary my-4 col-md-4"   style="float: left;">-</button></div>
+        <div><button id="operator3" (click)="passOperator('E')" class="btn btn-lg btn-outline-success my-4 col-md-4"   style="float: left;">=</button></div>
+        <div><button id="operator4" (click)="passOperator('P')" class="btn btn-lg btn-outline-primary my-4 col-md-4"   style="float: left;">.</button></div>
+        <div><button id="operator5" (click)="passOperator('M')" class="btn btn-lg btn-outline-primary my-4 col-md-4"   style="float: left;">*</button></div>
+        <div><button id="operator6" (click)="passOperator('D')" class="btn btn-lg btn-outline-primary my-4 col-md-4"   style="float: left;">/</button></div>
+        <div><button (click)="refresh()" class="btn btn-lg btn-outline-danger my-4 col-md-12">Clear</button></div>
+
+
+    </div>
+
+  </div>
+</div>
+<br>
+
+<div>
+  <h1 class="text-center text-primary pt-5">Service Testing</h1>
+  {{calname}}
+  {{calnage}}
+  {{caladdr}}
+</div>

@@ -1,0 +1,18 @@
+#main
+{
+  margin-top: 70px;
+  font-family: 'Times New Roman', Times, serif;
+  float: left;
+}
+#emialisrequired
+{
+  color:red
+}
+#email.ng-required
+{
+  border: 2px solid red;
+}
+#email.ng-valid
+{
+  border: 2px solid green;
+}

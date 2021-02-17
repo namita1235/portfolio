@@ -1,0 +1,28 @@
+<div class="container pt-5">
+  <div class="row pt-5">
+    <div class="main">
+      <h1 id="header">Love  Calculator</h1><br><br>
+      <form  [formGroup]="loveform" >
+      <label for="" id="text"> Enter Your Name  <span >*</span> </label>
+      <input type="text" name="" id="txtbox"  class="form-control" formControlName="name"><br>
+
+      <label for="" id="text"> Enter Your Lover Name <span >*</span></label>
+      <input type="text" name="" id="txtbox"  class="form-control" formControlName="secname"><br>
+
+      <button class="btn btn-outline-primary" type="submit" (click)="calculate()" [disabled]="!loveform.valid">Calculate Your <span class="material-icons "> favorite   </span></button>
+
+         <br>
+      <br>
+    </form>
+
+      <div class="container" *ngIf="hide">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: {{num}}%" >
+           {{num | number:'1.0-0'}} %
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

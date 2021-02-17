@@ -1,0 +1,16 @@
+#contactform
+{
+  margin-top: 25px;
+  margin:250px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+ mat-label
+ {
+   font-family: 'Times New Roman', Times, serif;
+ }
+ .example-full-width {
+  width: 100%;
+}
